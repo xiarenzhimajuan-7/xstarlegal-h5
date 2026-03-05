@@ -135,8 +135,20 @@
         }
 
         .logo-img {
-            height: 80px;
+            height: 50px;
             width: auto;
+        }
+
+        @media (min-width: 768px) {
+            .logo-img {
+                height: 60px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .logo-img {
+                height: 80px;
+            }
         }
 
         .logo-icon {
@@ -603,34 +615,216 @@
             transform: translateY(0);
         }
 
-        /* Responsive */
+        /* H5 Mobile First Styles */
+        .container {
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .hero {
+            padding: 100px 0 60px;
+            min-height: auto;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero-desc {
+            font-size: 15px;
+        }
+
+        .hero-tags {
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 10px 16px;
+            font-size: 13px;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 28px;
+        }
+
+        .concept-card {
+            padding: 24px;
+        }
+
+        .concept-card h3 {
+            font-size: 22px;
+        }
+
+        .concept-text {
+            font-size: 14px;
+        }
+
+        .advantage-item {
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .service-grid {
+            gap: 16px;
+        }
+
+        .service-card {
+            padding: 20px;
+        }
+
+        .coffee-card {
+            padding: 24px;
+        }
+
+        .coffee-card h2 {
+            font-size: 32px;
+        }
+
+        .qr-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .qr-card {
+            padding: 16px;
+        }
+
+        /* Tablet */
         @media (min-width: 768px) {
             .container {
-                padding: 0 40px;
+                padding: 0 32px;
             }
 
-            .service-grid {
-                grid-template-columns: 1fr 1fr;
+            section {
+                padding: 80px 0;
             }
 
-            .qr-grid {
-                grid-template-columns: repeat(4, 1fr);
+            .hero {
+                padding: 120px 0 80px;
+                min-height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero-desc {
+                font-size: 17px;
+            }
+
+            .hero-tags {
+                gap: 12px;
+            }
+
+            .tag {
+                padding: 12px 22px;
+            }
+
+            .section-header {
+                margin-bottom: 50px;
+            }
+
+            .section-title {
+                font-size: 36px;
             }
 
             .concept-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 40px;
+                gap: 32px;
                 align-items: center;
+            }
+
+            .concept-card {
+                padding: 32px;
+            }
+
+            .concept-card h3 {
+                font-size: 26px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .advantage-item {
+                padding: 24px;
+                margin-bottom: 20px;
+            }
+
+            .service-card {
+                padding: 24px;
+            }
+
+            .coffee-card {
+                padding: 32px;
+            }
+
+            .coffee-card h2 {
+                font-size: 38px;
+            }
+
+            .qr-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
+            .qr-card {
+                padding: 20px;
             }
         }
 
+        /* Desktop */
         @media (min-width: 1024px) {
+            .container {
+                padding: 0 40px;
+            }
+
+            section {
+                padding: 100px 0;
+            }
+
+            .hero h1 {
+                font-size: 56px;
+            }
+
+            .section-header {
+                margin-bottom: 60px;
+            }
+
+            .section-title {
+                font-size: 42px;
+            }
+
+            .concept-grid {
+                gap: 40px;
+            }
+
+            .concept-card {
+                padding: 40px;
+            }
+
+            .concept-card h3 {
+                font-size: 30px;
+            }
+
             .coffee-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 60px;
                 align-items: start;
+            }
+
+            .coffee-card h2 {
+                font-size: 42px;
             }
         }
     </style>
